@@ -4,5 +4,5 @@ from api.views import tasks
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tasks/', tasks),
+    path('tasks/', tasks)
 ]
