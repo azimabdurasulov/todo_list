@@ -1,10 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from api.views import HomeView
-from api.views import index
+from api.views import tasks
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HomeView.as_view()),
-    path('index/', index)
+    path('tasks/', tasks),
 ]
