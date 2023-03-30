@@ -156,8 +156,4 @@ def incompleted_task(request: HttpRequest):
                 return HttpResponse('Hello World!')
         
 def home(request: HttpRequest):
-    tasks = Task.objects.all()
-    data = {
-        "tasks":tasks
-    }
-    return render(request, 'home.html', context=data)
+    return render(request, 'home.html')
